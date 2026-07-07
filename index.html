@@ -8,25 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Beginner Website</title>
 </head>
 
 <body>
     <nav>
-        <div>
-        Juan Balderas
+        <div class="left">
+            <a href="/">Juan Balderas</a>
         </div>
-        <div> 
+
+        <div class="right"> 
             <a href="https://github.com/jbalderas-pgit/beginner-website" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
                 <span>Github</span>
             </a>
 
             <a href="https://www.linkedin.com/in/juan-balderas-solorzano/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
                 <span>LinkedIn</span>
             </a>
 
             <a href="mailto:jbalderas0314@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
                 <span>Email</span>
             </a>
         </div>
@@ -34,35 +41,139 @@
     </nav>
 
     <main>
-        <section>
-            <div>
+        <section class="personal-section">
+            <div class="text">
                 <h2>Features to include:</h2>
-                <li>I want to display some screenshots of my project</li>
-                <li>The languages I am proficient in</li>
-                <li>Embedded links to my Github repositories</li>
+                <p>
+                    I want to display some screenshots of my project,
+                    the languages I am proficient in,
+                    and embedded links to my Github repositories
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora incidunt odit exercitationem dolorum illo reiciendis mollitia sed quos reprehenderit labore nesciunt, repudiandae optio vitae odio assumenda eveniet? Nesciunt dolorem labore ipsa eaque dolore beatae omnis, ratione error explicabo excepturi iste est nemo necessitatibus aliquid sunt quam voluptatum doloribus cum ullam cumque modi ipsum! Repellat earum quam nemo labore sunt fugit deleniti voluptatem nobis consequatur, corporis laudantium quidem laborum iure veniam nam minima vero odio eius facilis voluptate reprehenderit, ratione eum. Libero soluta praesentium quidem neque iure ex dicta, itaque sequi! Quam beatae eos iste nisi quia ducimus laudantium repellendus veniam.</p>
+            
+
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Skills</span>
+                    </a>
+
+                    <a href="#review">
+                        <i class="fa-solid fa-pen"></i>
+                        <span>Reviews</span>
+                    </a>
+
+                    <a href="#contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headshot">
+                <img src="/Images/headshot.webp">
+
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                temp skills
+            </div>
+
+            <div class="cells">
+                <div class="cell">
+                    <img src="/Images/html-logo.webp" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="/Images/css-logo.webp" alt="css logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <div class="cell-info">
+                        <img src="/Images/JavaScript-logo.webp" alt=" javascript logo">
+                        <span>JavaScript</span>
+                    </div>
+                    <button class="toggle-project-btn">View Project</button>
+                    <div class="project-screeshot hidden">
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+
+                <div class="cell">
+                    <div class="cell-info">
+                        <img src="/Images/Java_programming_language_logo.svg.webp" alt="java logo">
+                        <span>Java</span>
+                    </div>
+                    <button class="toggle-project-btn">View Project</button>
+                    <div class="project-screeshot hidden">
+                        <img src="/Images/screenshots/java_bank_prog.jpg" alt="java todo list through command terminal">
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <div class="cell-info">
+                        <img src="/Images/C_Programming_Language.svg.webp" alt="c logo">
+                        <span>C</span>
+                    </div>
+                    <button class="toggle-project-btn">View Project</button>
+                    <div class="project-screeshot hidden">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review" class="review-section">
+            <h2>Reviews</h2>
+
+            <div class="group">
+
+                <div class="person-details">
+                    <img src="/Images/hobby_headshot.webp">
+                    <p>John Appleseed</p>
+                    <p>Senior Developer</p>
+                </div>
+
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi praesentium repudiandae obcaecati voluptatem incidunt, expedita cumque eaque asperiores reiciendis sit alias consectetur, voluptas labore similique cupiditate repellendus quam quis. Magni ab excepturi nulla explicabo velit doloremque dignissimos unde quo aut ullam dolor eius, numquam, adipisci assumenda reiciendis veritatis porro! Quasi assumenda facere expedita maxime aliquam delectus saepe vitae quisquam error repellendus amet quibusdam id odit necessitatibus, corrupti impedit, voluptatem nemo debitis ipsam dolor. Natus totam adipisci esse saepe illum! Accusantium provident exercitationem ea inventore sit officia. Harum, ad? Vero, ut dolorem. Ab ipsam quod ullam deleniti officiis aliquam doloremque enim.
+                </div>
 
             </div>
         </section>
 
-        <section>
-            <div>
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, rerum iure alias vitae qui quia. Fuga tempore non dolore eveniet deleniti itaque ducimus repudiandae ipsum delectus nesciunt tenetur architecto ipsam, perspiciatis error praesentium veniam voluptas quibusdam illo dolorum a facere sequi laboriosam facilis nobis. Ipsam harum veritatis ea. Soluta, quidem. Similique voluptatibus eum vel ex laudantium, aliquam molestiae nisi ipsam nulla, eos quam placeat magnam blanditiis perferendis quia consectetur facere, a sunt dolore. Illum consequuntur quod vitae harum aliquam non laborum aperiam, voluptatum accusantium repellendus molestias facilis autem magnam deserunt explicabo est recusandae ullam pariatur? Repellat, obcaecati ipsum! Pariatur, animi?
+                </div>
+            
 
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="name"/>
+
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email"/>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10" ></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
             </div>
         </section>
 
     </main>
 
-
-
-
-
-
-    <script src="script.js""></script>
+    <script src="script.js"></script>
 
 </body>
 
